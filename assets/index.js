@@ -78,7 +78,7 @@ let points = Math.floor (Math.random () * 3 )
 return  points  
    /*Code Here*/
 }
-//console.log (inning ());
+console.log (inning ());
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
@@ -96,27 +96,22 @@ Use the finalScore function below to do the following:
 
 function finalScore( inning, number, /*Code Here*/){
 
-let finalHome = 0;
-
-let finalAway = 0; 
-
   for ( let i = 0 ; i < number ; i++ ) {
 
-      let point = inning();
-      let point2 = inning();
-
-      finalHome = point + finalHome; 
-      finalAway = point2 + finalAway;
-}
-
+    let finalHome = 0 
+    finalHome + inning ()
+    console.log (finalHome, "hola");
+  }
 return  {
   'Home' :  finalHome ,
-  'Away' :  finalAway ,
+  'Away' :  0 ,
 }
 
 }
 
-console.log (finalScore (inning,9) );
+console.log (finalScore (inning,9), 'I am here' );
+console.log("dgdfggdfggfd")
+
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
@@ -131,15 +126,11 @@ For example: invoking getInningScore(inning) might return this object:
   */
 
 
-function getInningScore( inning/*Your Code Here */) {
-
-return {
-  'Home': inning(),
-  'Away': inning()
-}  /*Your Code Here */
+function getInningScore(/*Your Code Here */) {
+  /*Your Code Here */
 
 }
-console.log (getInningScore(inning));
+
 
 /* STRETCH: ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:
